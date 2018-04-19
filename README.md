@@ -19,3 +19,9 @@ To use this repo:
 2. Clone this hole repo
 3. Navigate to your project directory and run ```npm install```
 4. You are ready to use all preconfigured helpers in VSCode and start coding React-Redux using create-react-app
+
+Useful Visual Studio Code extension you might want to use - HTML CSS Support:
+https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css
+
+Things that will be added:
+1. Storybook - https://github.com/storybooks/storybook

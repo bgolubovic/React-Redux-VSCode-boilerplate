@@ -1,12 +1,16 @@
 {
-    "editor.formatOnSave": true,
-    "[javascript]": {
-        "editor.formatOnSave": false
-    },
-    "eslint.autoFixOnSave": true,
-    "eslint.alwaysShowStatus": true,
-    "prettier.disableLanguages": [
-        "js"
-    ],
-    "files.autoSave": "onFocusChange"
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "prettier.disableLanguages": ["js"],
+  "files.autoSave": "onFocusChange",
+  "css.fileExtensions": ["css", "scss", "less"],
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  }
 }

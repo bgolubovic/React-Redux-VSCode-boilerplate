@@ -5,6 +5,7 @@ This is React Redux Visual Studio Code startup boilerplate using create-react-ap
 * Added Prettier as code formatter
 * Added precommit  script for run Prettier on git commit 
 * Added VSCode predefined configuration for easier team collaboration
+* Added VSCode configuration for editor debugging
 * Added Redux to the project
 
 Make sure you install ESLint plugin for Visual Studio Code

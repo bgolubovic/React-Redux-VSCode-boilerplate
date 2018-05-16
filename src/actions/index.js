@@ -4,3 +4,9 @@ export const add = amount => {
     amount: amount
   };
 };
+
+export const reset = () => {
+  return {
+    type: "RESET"
+  };
+};

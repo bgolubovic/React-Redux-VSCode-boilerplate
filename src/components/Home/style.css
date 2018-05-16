@@ -30,6 +30,10 @@
   font-size: large;
 }
 
+.App-button {
+  margin: 1em;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

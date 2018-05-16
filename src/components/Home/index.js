@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import "./style.css";
 
 import { connect } from "react-redux";
-import { add } from "./actions";
+import { add, reset } from "../../actions";
 
 let mapStateToProps = store => {
   return {
@@ -11,9 +11,13 @@ let mapStateToProps = store => {
   };
 };
 
-class App extends Component {
+class Home extends Component {
   loadMore() {
     this.props.dispatch(add(1));
+  }
+
+  resetStore() {
+    this.props.dispatch(reset());
   }
 
   render() {
@@ -28,14 +32,17 @@ class App extends Component {
           <h2 className="App-heading">Created using create-react-app</h2>
           <h4 className="App-heading-small">Creted by Bojan Golubovic</h4>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button onClick={this.loadMore.bind(this)}>Add</button>
+        <button className="App-button" onClick={this.loadMore.bind(this)}>
+          Add
+        </button>
+        <button className="App-button" onClick={this.resetStore.bind(this)}>
+          Reset
+        </button>
         <p className="App-intro">Redux store: {count} </p>
+        {this.props.children}
       </div>
     );
   }
 }
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps)(Home);

@@ -5,6 +5,9 @@ const reducer = (state = initialState, action) => {
     case "ADD":
       state = addToStore(state, action);
       break;
+    case "RESET":
+      state = resetStore();
+      break;
     default:
       break;
   }
@@ -13,6 +16,10 @@ const reducer = (state = initialState, action) => {
 
 const addToStore = (state, action) => {
   return [...Array(state.length + action.amount).keys()];
+};
+
+const resetStore = () => {
+  return initialState;
 };
 
 export default reducer;
